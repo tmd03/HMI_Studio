@@ -1,20 +1,22 @@
-<!DoOCKTYPE html>
+<!DOCTYPE html>
 <html>
   <body>
-    <h1> 아 집가고싶어 </h1>
-    <div id="emoji" style="font-size:8rem"> 🏠 </div>
+    <h1>Hello, World!</h1>
+    <div id="emoji" style="font-size:8rem">😴</div>
     <div id="popup" hidden>
-      <p> Let's go home~!</p>
-      <button onclick="closePopup()"> 지하철 칙칙폭폭 </button>
-      </div>
-      <script>
-        setTimeout(function(){
-          document.getElementById('popup').hidden=false;
-        }, 3000);
-        function closePopup() {
+      <p>Hi, there?</p>
+      <button onclick="closePopup()">thanks!</button>
+    </div>
+
+    <script>
+      setTimeout(function() {
+        document.getElementById('popup').hidden = false;
+      }, 3000);
+
+      function closePopup() {
           document.getElementById('popup').hidden=true;
           document.getElementById('emoji').textContent='☺️';
         }
-        </script>
-   </body>
+    </script>
+  </body>
 </html>
